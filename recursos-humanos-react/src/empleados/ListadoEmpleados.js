@@ -1,6 +1,25 @@
-import React from 'react'
+import axios from 'axios';
+import React, { useEffect, useState } from 'react'
+import { NumericFormat } from 'react-number-format';
 
 export default function ListadoEmpleados() {
+    const urlBase = "http://localhost:8080/rh-app/empleados"
+
+
+    //hook
+    const [empleados, setEmpleados] = useState([]);    
+
+    useEffect( () => {
+        cargarEmpleados();
+        },[] );
+
+    const cargarEmpleados = async () => {
+        const resultado = await axios.get(urlBase);
+        console.log("Resultado de cargar empleados");
+        console.log(resultado.data);
+        setEmpleados(resultado.data);
+    }
+
     return (
         <div className='container'>
             <div className="container text-center" style={{ margin: "30px" }}>
@@ -17,18 +36,23 @@ export default function ListadoEmpleados() {
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                    </tr>
+                {
+                    //iteramos arreglo de empleaos
+                    empleados.map( (empleado, indice ) => (
+                    <tr key = {indice}>
+                        <th scope="row">{empleado.idEmpleado}</th>
+                        <td>{empleado.nombre}</td>
+                        <td>{empleado.deparrtamento}</td>
+                        <td> <NumericFormat value = {empleado.sueldo}
+                            displayType={'text'}
+                            thousandSeparator = ','
+                            prefix={'$'}
+                            decimalScale={2}
+                            fixedDecimalScale/>
+                        </td>
+                    </tr>    
+                    ))                                        
+                }
                 </tbody>
             </table>
 
