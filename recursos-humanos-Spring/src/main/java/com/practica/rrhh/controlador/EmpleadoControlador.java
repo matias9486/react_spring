@@ -15,7 +15,7 @@ import java.util.List;
 @RestController
 //http://localhost:8080/rh-app/
 @RequestMapping("rh-app")
-@CrossOrigin(value = "http:localhost:3000")
+@CrossOrigin(value = "http://localhost:3000")
 public class EmpleadoControlador {
     private static final Logger logger= LoggerFactory.getLogger(EmpleadoControlador.class);
 
