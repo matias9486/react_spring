@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function Navegacion() {
     return (
-        <div className='container'>
-            <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div className='container-fluid'>
+            <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="/">Sistema de Recursos Humanos</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">

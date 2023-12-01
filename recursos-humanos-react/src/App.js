@@ -6,7 +6,7 @@ import EditarEmpleado from "./empleados/EditarEmpleado";
 
 function App() {
   return (
-    <div className="container">
+    <div className="container-fluid">
       <BrowserRouter>
         <Navegacion/>
         <Routes>
