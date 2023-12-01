@@ -17,3 +17,15 @@ Aplicación Full Stack que integra React JS y Spring Boot con Java. El Sistema d
   <li>Creación de la Capa  de Datos con JPA y Hibernate</li>
   <li>Conexión a Base de Datos con MySql</li>
 </ul>
+
+<h3>Capturas 📷:</h3>
+<a href="https://raw.githubusercontent.com/matias9486/react_spring/main/screenshot/agregar_empleado.jpg" target="_blank"><img src="https://raw.githubusercontent.com/matias9486/react_spring/main/screenshot/agregar_empleado.jpg" alt="Agregar Empleado"></a>
+<br>
+
+<a href="https://raw.githubusercontent.com/matias9486/react_spring/main/screenshot/editar_empleado.jpg" target="_blank"><img src="https://raw.githubusercontent.com/matias9486/react_spring/main/screenshot/editar_empleado.jpg" alt="Editar Empleado"></a>
+<br>
+
+<a href="https://raw.githubusercontent.com/matias9486/react_spring/main/screenshot/listar_empleados.jpg" target="_blank"><img src="https://raw.githubusercontent.com/matias9486/react_spring/main/screenshot/listar_empleados.jpg" alt="Listar Empleados"></a>
+<br>
+
+
